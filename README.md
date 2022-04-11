@@ -3,7 +3,7 @@
 ## React 
 
 <details>
-<summary>main concepts</summary>
+<summary><b>main concepts</b></summary>
 
 1. [Hello World](react/main%20concepts/1.%20Hello%20World.md)
 2. [Introducing JSX](react/main%20concepts/2.%20Introducing%20JSX.md)
