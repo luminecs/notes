@@ -12,5 +12,6 @@
 5. [State and Lifecycle](react/main%20concepts/5.%20State%20and%20Lifecycle.md)
 6. [Handing Events](react/main%20concepts/6.%20Handing%20Events.md)
 7. [Conditional Rendering](react/main%20concepts/7.%20Conditional%20Rendering.md)
+8. [Lists and Keys](react/main%20concepts/8.%20Lists%20and%20Keys.md)
 
 </details>
