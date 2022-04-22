@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+
+<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<!--Babel Script-->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<!--type="text/jsx"-->
+<script type="text/jsx">
+  const app = document.getElementById('app')
+
+  // 必须大写，第一个参数是props
+  function Header (props) {
+    console.info(props) // { title: "React 💙" }
+    // <h1>{`Cool ${prop.title}`}</h1>
+    // return <h1>{title ? title : 'Default title'}</h1> 此代码表示不传递title，依然可以选择默认值
+    return (<h1>{props.title}</h1>)
+  }
+
+  // object destructuring
+  // function Header1 ({ title }) {
+  //   console.info(title) // "React 💙"
+  // }
+
+  // 可以一直嵌套组建，构造UI，模块化思想，可重用
+  function HomePage () {
+    const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton']
+    // state
+    const [likes, setLikes] = React.useState(0)
+
+    function handleClick () {
+      console.info('increment like count')
+      setLikes(likes + 1)
+    }
+
+    return <div>
+      <Header title="Develop. Preview. Ship. 🚀"/>
+      <Header title={"React 💙"}/>
+      <ul>
+        {names.map(n => (
+          <li key={n}>{n}</li>
+        ))}
+      </ul>
+
+      <button onClick={handleClick}>Like({likes})</button>
+    </div>
+  }
+
+  /**
+   * Note that browsers don't understand JSX out of the box,
+   * so you'll need a JavaScript compiler, such as a Babel,
+   * to transform your JSX code into regular JavaScript.
+   */
+  ReactDOM.render(<HomePage />, app)
+</script>
+
+</body>
+</html>
