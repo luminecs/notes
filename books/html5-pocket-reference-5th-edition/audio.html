@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>audio</title>
 </head>
 <body>
-$END$
+<audio src="soundtrack.webm" autoplay controls>
+  Your browser does not support embedded.
+  Listen to the file <a href="soundtrack.webm">here</a>.
+</audio>
+<audio id="soundtrack" controls preload="auto">
+  <source src="soundtrack.mp3" type="audio/mp3">
+  <source src="soundtrack.ogg" type="audio/ogg">
+  <source src="soundtrack.webm" type="audio/webm">
+</audio>
 </body>
 </html>
