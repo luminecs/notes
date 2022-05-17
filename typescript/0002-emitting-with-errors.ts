@@ -1,0 +1,3 @@
+/**
+ * tsc --noEmitOnError **.ts
+ */
