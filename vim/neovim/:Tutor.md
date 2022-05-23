@@ -18,10 +18,33 @@ u: redo
 
 输入 `:qa! <Enter>`：强制关闭所有窗口，不保留任何修改。
 
-输入 `:help` 并回车：打开帮助文档。
+输入 `:help <Enter>`：打开帮助文档。
 
 <hr>
 
 `Normal mode` 下
 
-`x` 按键：删除光标所在的字符。
+Press `x` to delete the  character under the cursor.
+
+Press `i` to insert text.
+
+> 如何在插入模式执行正常模式的命令？
+
+Press `A` to append text。
+
+Use `:wq <Enter>` to write a file and quit。
+
+Use `nvim FILENAME` to new or open a file.
+
+Use `<Esc> :q! <Enter>` to trash all changes and exit Neovim.
+
+Use `<Esc> :wq <Enter>` to save the changes and exit Neovim.
+
+Type `dw` to delete a word. 删除单词字符范围`[光标所在位置, 光表所在单词与后面紧邻单词之间的空字符串(如果有特殊符号则到特殊符号)]`。
+
+Type `d$` to delete to the end of the line.
+
+## On Operators and Motions
+
+
+
