@@ -30,7 +30,7 @@ Press `i` to insert text.
 
 > 如何在插入模式执行正常模式的命令？
 
-Press `A` to append text。
+Press `A` to append text to the end of the line。
 
 Use `:wq <Enter>` to write a file and quit。
 
@@ -121,6 +121,73 @@ To save part of the file, type `v` motion `:w` FILENAME for selecting text to wr
 To retrieve the contents of a file, type `:r` FILENAME. The file you retrieve is placed below the cursor line.
 
 Type `:r !ls` to read the output of the `ls` command and puts it below the cursor.
+
+Type `o` to open a line below the cursor and place you in Insert mode.
+
+Type `O` to open a line above the cursor and place you in Insert mode.
+
+Type `a` to insert text after the cursor.
+
+> Note: `a`, `i`, and `A` all go to the same Insert mode, the only difference is 
+> where the characters are inserted.
+
+Type a capital `R` to replace more than one character. (Replace mode)
+
+> Note: Replace mode is like Insert mode, 
+> but every typed character replaces an existing character.
+
+Use the `y` (yank) operator to copy text and `p` (put) to put it.
+
+> Note: you can use `y` as an operator: `yw` yanks one word.
+> Note: you can use `P` to put before the cursor, rather than after.
+
+Set an option so search and substitute commands ignore case.
+
+Set the `ic` (Ignore case) option by entering: `:set ic`.
+
+Set the `hlsearch` and `incsearch` options: `:set hls is`.
+- `is` `incsearch`: show partial matches for a search phrase.
+- `hls` `hlsearch`: highlight all matching phrases.
+
+To disable ignoring case enter: `:set noic`.
+
+> Note: Prepend `no` to switch an option off.
+
+To invert the value of a setting, prepend it with `inv`: `:set invic`.
+
+To remove the highlighting of matches enter: `:nohlsearch`.
+
+If you want to ignore case fo just one search command, use `\c` in the phrase: `/ignore\c <Enter>`.
+
+Use the online help system.
+- press the `<F1>` key
+- type `:help`
+
+Type `<C-w>` to jump from on window to another.
+
+Type `:q` to close the current help window.
+
+`:help TOPIC`:
+
+```shell
+:help w
+:help c_CTRL-D
+:help insert-index
+:help user-manual
+```
+
+config file: `init.vim`.
+
+```shell
+:call mkdir(stdpath('config'), 'p')
+:exe 'edit' stdpath('config').'/init.vim'
+```
+
+For more information type `:help init.vim`.
+
+<hr>
+
+Command line completion with `<C-d>` and `<Tab>`.
 
 
 
