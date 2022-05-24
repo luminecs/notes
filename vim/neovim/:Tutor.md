@@ -54,6 +54,8 @@ Type `2w` to skip 2 words.
 
 Type `d2w` to delete 2 words.
 
+Type `2b` to skip 2 words backward.
+
 Press `u` to undo the last commands, `U` to fix a whole line (undo all the changes on a line).
 
 Use `<C-r>` to undo the undo's.
