@@ -62,6 +62,8 @@ Use `<C-r>` to undo the undo's.
 
 Use `0` to move to the start of the line.
 
+Use `$` to move to the end of the line.
+
 Type `p` to put previously deleted text after the cursor. 
 
 Type `P` to put previously deleted text before the cursor. 
@@ -103,5 +105,20 @@ Type `:%s/old/new/gc` to find every occurrence in the whole file, with a prompt 
 Press `<C-o>` takes you back to older positions, `<C-i>` to newer positions.
 
 Type `:!` followed by an external command to execute that command.
+- `:!ls`
+- `:!rm FILENAME`
+
+To save the changes made to the text, type `:w` FILENAME.
+
+Press `v` starts `Visual selection`. You can move the cursor around to make the selection bigger or smaller. Then you can use an operator to do something with the text. For example, `d` deletes the text.
+
+To save part of the file, type `v` motion `:w` FILENAME for selecting text to write.(with hjkj)
+
+`v` -> hjkl -> `:'<,'>w TEST`: Neovim will write the selected lines to the file TEST.
+
+To retrieve the contents of a file, type `:r` FILENAME. The file you retrieve is placed below the cursor line.
+
+Type `:r !ls` to read the output of the `ls` command and puts it below the cursor.
+
 
 
