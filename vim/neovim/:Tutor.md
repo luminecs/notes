@@ -176,7 +176,7 @@ Type `:q` to close the current help window.
 :help user-manual
 ```
 
-config file: `init.vim`.
+config file: `init.vim` or `init.lua`.
 
 ```shell
 :call mkdir(stdpath('config'), 'p')
