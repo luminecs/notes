@@ -24,7 +24,7 @@ u: redo
 
 `Normal mode` 下
 
-Press `x` to delete the  character under the cursor.
+Press `x` to delete the character under the cursor.
 
 Press `i` to insert text.
 
