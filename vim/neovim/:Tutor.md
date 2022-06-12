@@ -191,3 +191,6 @@ Command line completion with `<C-d>` and `<Tab>`.
 
 To be able to see what mode you are in, type `:set showmode`.
 
+<hr>
+
+
