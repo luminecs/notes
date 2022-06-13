@@ -14,8 +14,17 @@
  * system to make predictions about what code is expected before it
  * runs. Static types systems describe the shapes and behaviors of what our
  * values will be when we run our programs.
+ *
+ * An editor that supports TypeScript can deliver "quick fixes" to 
+ * automatically fix errors, refactorings to easily re-organize code, and 
+ * useful navigation features for jumping to definitions of a variable, 
+ * or finding all references to a given variable. All of this is built on 
+ * top of the type-checker and is fully cross-platform, so it's likely that 
+ * your favorite editor has TypeScript support available.
  */
 /**
+ * tsc, the TypeScript compiler. 
+ * npm install -g typescript
  * tsc **.ts => **.js
  */
 console.info('Hello World!')
@@ -23,4 +32,5 @@ console.info('Hello World!')
 function greet(person, date) {
     console.info(`Hello ${person}, today is ${date}`)
 }
+// greet('Brendan')
 greet('Brendan', '2020')
