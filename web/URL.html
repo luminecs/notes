@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>URL</title>
+</head>
+<body>
+<pre>
+  const url = new URL(url [, base])
+
+  new URL('a', 'http://b')
+    == new URL('/a', 'http://b')
+    == new URL('a', 'http://b/')
+    == new URL('/a', 'http://b/')
+    == 'http://b/a'
+
+</pre>
+<script type="text/javascript">
+  let m = 'http://1.io'
+  let a = new URL('/', m)
+  // a.href = 'http://1.io/' a.pathname = '/'
+  console.info(a)
+  console.info('a = ' + a)
+
+  let b = new URL(m)
+  // b.href = 'http://1.io/' b.pathname = '/'
+  console.info(b)
+  console.info('b = ' + b)
+
+  let c = new URL('en/docs', b)
+  // c.href = 'http://1.io/en/docs' c.pathname = '/en/docs'
+  console.info(c)
+  console.info('c = ' + c)
+
+  let d = new URL('/en/docs', b)
+  // d.href = 'http://1.io/en/docs' d.pathname = '/en/docs'
+  console.info(d)
+  console.info('d = ' + d)
+
+  let e = new URL('en/docs', 'http://1.io/fr')
+  // e.href = 'http://1.io/en/docs' e.pathname = '/en/docs' e.origin = 'http://1.io'
+  console.info(e)
+  console.info('e = ' + e)
+
+  // let f = new URL('en/docs', '') // Invalid base URL
+  // let g = new URL('en/docs') // Invalid base URL
+
+  let h = new URL('http://1.io')
+  // h.href = 'http://1.io/' e.pathname = '/' e.origin = 'http://1.io'
+  console.info(h)
+  console.info('h = ' + h)
+
+  let i = new URL('http://2.io', 'http://1.io')
+  // i.href = 'http://2.io/' i.pathname = '/' i.origin = 'http://2.io'
+  console.info(i)
+  console.info('i = ' + i)
+
+  let j = new URL('//foo.com', 'http://1.io')
+  // j.href = 'http://foo.com/' j.pathname = '/' j.origin = 'http://foo.com'
+  console.info(j)
+  console.info('j = ' + j)
+
+</script>
+</body>
+</html>
