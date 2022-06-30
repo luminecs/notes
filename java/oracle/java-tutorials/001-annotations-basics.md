@@ -4,7 +4,7 @@
 
 In its simplest form, annotation looks like the following:
 
-```
+```java
 @Entity
 ```
 
@@ -87,3 +87,27 @@ _use_ of types. Here are some examples:
 ```java
 new @Interned MyObject();
 ```
+
+- Type cast:
+
+```java
+String myString = (@NonNull String) str;
+```
+
+- `implements` clause:
+
+```java
+class UnmodifiableList<T> implements 
+    @Readonly List<@Readonly T> {}
+```
+
+- Thrown exception declaration:
+
+```java
+void monitorTemperature() throws
+    @Critical TemperatureException {}
+```
+
+This form of annotation is called a _type annotation_. For more
+information, see
+[Type Annotations and Pluggable Type Systems](004-type-annotations-and-pluggable-type-systems.md).
