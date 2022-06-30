@@ -1,4 +1,4 @@
-# Declaring ann Annotation Type
+# Declaring an Annotation Type
 
 Many annotations replace comments in code.
 
@@ -60,7 +60,7 @@ definition with the `@Documented` annotation:
 
 ```java
 // import this to use @Documented
-import java.lang.annotation;
+import java.lang.annotation.*;
 
 @Documented
 @interface ClassPreamble {}
