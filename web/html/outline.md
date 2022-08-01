@@ -20,7 +20,28 @@ HTML (HyperText Markup Language) 是网页的骨架。
 <details>
 <summary>HTML Lists 有哪几种？</summary>
 
-  - Ordered Lists
-  - Unordered Lists
+- Ordered Lists
+- Unordered Lists
 </details>
+
+<details>
+<summary>什么是有序列表？</summary>
+
+Ordered Lists，根据前后顺序显示序号
+
+```html
+<ol>
+  <li>第一项</li>
+  <li>第二项</li>
+  <li>第三项</li>
+</ol>
+```
+
+<ol>
+  <li>第一项</li>
+  <li>第二项</li>
+  <li>第三项</li>
+</ol>
+</details>
+
 
