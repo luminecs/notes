@@ -4,6 +4,8 @@
 
 hi
 
+[Another markdown test](./2.md)
+
 <details>
 <summary><b>main concepts</b></summary>
 
