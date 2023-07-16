@@ -1,10 +1,13 @@
 # Notes
 
+* TOC
+{:toc}
+
 ## React 
 
 hi
 
-[Another markdown test](./2.md)
+[Another markdown test](./test.md)
 
 <details>
 <summary><b>main concepts</b></summary>
