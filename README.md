@@ -1,6 +1,7 @@
 # Notes
 
-* TOC {:toc}
+* TOC
+{:toc}
 
 ## React 
 
