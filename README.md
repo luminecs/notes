@@ -1,4 +1,5 @@
 # Notes
+{:.no_toc}
 
 * TOC
 {:toc}
